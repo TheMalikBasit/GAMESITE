@@ -1,0 +1,227 @@
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+*/
+body{
+    font-family: "Labrada";
+}
+#title{
+    background-image: linear-gradient(135deg, #ff4c68 30%, #23e2ff);
+    display: flex;
+    background-size: cover;
+    background-size: 100% 100%;
+
+}
+.container-fluid{
+    align-items: center;
+    padding: 2% 8% 5% 6%;
+}
+.COD-IMAGE{
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+}
+h1{
+    font-family: "Labrada";
+    font-size: 3rem;
+    font-weight: normal;
+    color: white;
+    padding-bottom: 2%;
+}
+h2{
+    font-size: 3.5rem;
+}
+h3{
+    font-weight: bold;
+    font-size: 2rem;
+    font-family: "Montserrat";
+}
+.navbar-brand{
+    font-family: "Ubunto";
+    font-size: 2.1rem;
+    font-weight: bold;
+    color: black;
+}
+/* .navbar{
+    padding-bottom: 3%;
+} */
+#skye{
+    display: flex;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 210px;
+    width: 270px;
+}
+#jett{
+    display: flex;
+    position: absolute;
+    left: -60px;
+    top: 10px;
+    width: 350px;
+}
+#brim{
+    display: flex;
+    position: absolute;
+    left: 405px;
+    top: 20px;
+    width: 250px;
+}
+#omen{
+    display: flex;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 420px;
+}
+#icon{
+    margin-top: -6px;
+    width: 40px;
+}
+.valo{
+    margin-top: 5px;
+    transition: all 1.1s;
+}
+.valo:hover{
+    transform: scale(1.1);
+}
+#navbar{
+    display: flex;
+}
+.btn{
+    margin-right: 10px;
+}
+.dropdown:hover .dropdown-menu {
+    display: block;
+    animation: fadein 0.5s ease; /* Add a fade-in animation */
+  }
+  @keyframes fadein {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+#features{
+    padding: 5% 7%;
+    text-align: center;
+}
+.featurebox{
+    text-align: center;
+    padding: 5%;
+}
+p{
+    color: rgb(33, 130, 128);
+    font-weight: bold;
+}
+.midimages{
+    margin-bottom: 1rem;
+    color: #ff4c68;
+    transition: all 1.2s;
+}
+.midimages:hover{
+    color: red;
+    transform: scale(1.2);
+}
+hr{
+    margin-top: 0px;
+    border-style: none;
+    border-top-style: dotted;
+    border-width: 10px;
+    border-color: rgb(0, 0, 0);
+    width: 100%;
+}
+#testimonials{
+    background-image: linear-gradient(135deg, #ff4c68 30%, #23e2ff);
+    padding: 5% 15%;
+    text-align: center;
+    /* font-family: "Montserrat"; */
+    font-weight: bold;
+    color: white;
+}
+.dogimg{
+    margin: 4%;
+    width: 10%;
+    border-radius: 100%;
+}
+#press{
+    background-image: linear-gradient(135deg, #ff4c68, #23e2ff 90%);
+    text-align: center;
+    padding-bottom: 3%; 
+}
+.press-images{
+    width: 15%;
+    margin: 20px 20px 50px; 
+}
+.features-video{
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+/* z-index is a property used to specify what content should be on top or bottom 
+    for example:
+    1: z-index : 1; will be on top of the any other content only when its position is absolute or relative 
+    2: z-index :-1; will be under any other content only when its position is absolute or relative */
+#pricing{
+    padding: 3%;
+    text-align: center;
+}
+.pricing-options{
+    padding: 3%;
+}
+/* Max width mean any value smaller than given value
+   Min width mean any value greater tha given value
+*/
+@media (max-width: 988px){
+    #title{
+        text-align: center;
+    }
+    li{
+        text-align: center;
+    }
+    .container-fluid{
+        height: 770px;
+        overflow: hidden;
+    }
+    #jett{
+        position: relative;
+        margin-left: 1%;
+    }
+    #skye{
+        position: absolute;
+       
+    }
+    #brim{
+        margin-left: 10%;
+    }
+    #omen{
+        margin-left: 1%;
+    }
+    /* i set the height of the testimonils div so that changing contem may not distort the view in any aspect or resolution */
+    #testimonials{
+        height: 570px;
+        overflow: hidden;
+    }
+}
+#cta{
+    text-align: center;
+    
+    font-family: "Montserrat";
+    background-image: linear-gradient(135deg, #ff4c68 40%, #23e2ff);
+}
+.ctah3{
+    padding: 3% 5%;
+    font-size: 4rem;
+    color: white;
+    font-weight: 900;   
+}
+.sizebtn{
+    font-size: 1.5rem;
+}
+#footer{
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 3% 5% 7%;
+}
+.footer-spacing{
+    margin-top: 5%;
+    margin-right: 2%;
+}
