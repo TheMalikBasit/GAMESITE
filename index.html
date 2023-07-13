@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>GAME LAND</title>
+
+  <!--Bootstrap links-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+  <!-- Google fonts links-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Labrada&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Ubuntu&display=swap" rel="stylesheet">
+  
+  <!--Font awesome link-->
+  <script src="https://kit.fontawesome.com/41a600c35a.js" crossorigin="anonymous"></script>
+  
+  <!-- JAVA SCRIPT LINK SHOULD BE ADDED TO APPLY AND INTERECT WITH BOOTSTRAP CODES -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <!-- CSS Style sheet link-->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<!-- There are total number of 12 units in wab view we specfy how many units should a div oor inage or block will use
+      For examle   
+      1: col-12 this will use 100 percent of screen width
+      2: col-6 this will use 50 percent of the screen width and so on
+      3: Many dives in one dive with "col" class will arrange themselve in one line in every view e.g mobile,laptop,tablet
+      4: Many dives with class "col-lg-6" or "col-md-6" or "col-sm-6" etc 
+                          will change the view for that div to specfic view of device e.gmobile,laptop,tablet
+      5: Examle code
+            <div class = "row">
+            <div class = "col-lg-3 col-md-4 col-sm-6" style= "background-color:yellow; border: 1px solid;">This is div 1</div>
+            <div class = "col-lg-3 col-md-4 col-sm-6" style= "background-color:yellow; border: 1px solid;">This is div 2</div>
+            <div class = "col-lg-3 col-md-4 col-sm-6" style= "background-color:yellow; border: 1px solid;">This is div 3</div>
+            <div class = "col-lg-3 col-md-4 col-sm-6" style= "background-color:yellow; border: 1px solid;">This is div 4</div>
+  </div>
+end:) -->
+
+<body>
+  <section id="title">
+    <div class="container-fluid">
+     <!-- Nav Bar -->
+     <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="">GAME LAND</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto">
+            <!--GAME BUTTON-->
+            <div class="dropdown nav-item">
+              <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" style="color: white;" aria-expanded="false">
+                GAMES
+              </button>
+              <div class="dropdown-menu" style="background-color: black;">
+                <li><a class="dropdown-item" style="color: rgb(14, 186, 183); font-weight: bold;" href="#valorantid">VALORANT</a></li>
+                <li><a class="dropdown-item" style="color: rgb(14, 186, 183); font-weight: bold;" href="#">CALL OF DUTY</a></li>
+                <li><a class="dropdown-item" style="color: rgb(14, 186, 183); font-weight: bold;" href="#">CSGO</a></li>
+              </div>
+            </div>
+            <!--Contact Button-->
+            <div class="dropdown nav-item">
+              <button class="btn dropdown-toggle" type="button" style="color: white;" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                CONTACT
+              </button>
+              <div class="dropdown-menu" style="background-color: black;">
+                <li><a class="dropdown-item" style=" color: rgb(14, 186, 183); font-weight: bold;" href="#footer"> MAIL US</a></li>
+                <li><a class="dropdown-item" style=" color: rgb(14, 186, 183); font-weight: bold;" href="#footer"> Instagram</a></li>
+                <li><a class="dropdown-item" style=" color: rgb(14, 186, 183); font-weight: bold;" href="#footer"> Whats App</a></li>
+              </div>
+            </div>
+            <!--Product Button-->
+            <div class="dropdown nav-item">
+              <button class="btn dropdown-toggle" type="button" style="color: white;" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                PRODUCTS
+              </button>
+              <div class="dropdown-menu" style="background-color: black;">
+                <li><a class="dropdown-item" style=" color: rgb(14, 186, 183); font-weight: bold;" href="#"> Clothings</a></li>
+                <li><a class="dropdown-item" style=" color: rgb(14, 186, 183); font-weight: bold;" href="#"> Key Chains</a></li>
+                <li><a class="dropdown-item" style=" color: rgb(14, 186, 183); font-weight: bold;" href="#"> Custom Bags</a></li>
+              </div>
+            </div>
+            <li class="nav-item">
+              <a class="nav-link text-left" href="">INGAME CURRENCIES </a>
+            </li>
+        </ul>
+     </div>
+    </nav>
+
+  <hr>
+
+  <!-- Title -->
+  <div id="valorantid" class="row ">
+    <div  class="col-lg-6">
+      <h1>VALORANT </h1>
+      <!--Button 1-->
+      <button type="button" class="btn btn-outline-dark btn-lg valo B1"> <a href="https://playvalorant.com/en-us/?gad=1&gclid=Cj0KCQjw9deiBhC1ARIsAHLjR2Af0Vs76z2xV3XeDA6uv6sNw-xXKvfCrZqAIn_4W9AQOfTvz3j9gdsaAm8oEALw_wcB&gclsrc=aw.ds"
+         style="color: white; text-decoration: none;" target="_blank" rel="noopener" rel="noreferrer" >
+         <img id="icon" src="images/valo.png" alt="icon"> Download</a></button>
+      <!--Button 2-->
+      <button type="button" class="btn btn-outline-dark btn-lg valo B2"><a href="https://www.explorant.space/" 
+        style="color: white; text-decoration: none;" target="_blank" rel="noopener" rel="noreferrer">
+        <i class="fa-brands fa-wpexplorer"></i> Explore</a></button>
+      <!--Button 3-->
+      <button type="button" class="btn btn-outline-dark btn-lg valo B3"><a href="https://steamshop.pk/" 
+        style="color: white; text-decoration: none;" target="_blank" rel="noopener" rel="noreferrer">
+        <i class="fa-regular fa-dollar-sign" style="color: #ffffff;"></i> Buy VPs</a></button>
+      <!--Button 4-->
+      <button type="button" class="btn btn-outline-dark btn-lg valo B"><a href="https://steamshop.pk/" 
+        style="color: white; text-decoration: none;" target="_blank" rel="noopener" rel="noreferrer">
+        <i class="fa-regular fa-dollar-sign" style="color: #ffffff;"></i> Log in</a></button>
+    </div>
+
+    <div  class="col-lg-6">
+      <div id="valorant-intro" class="carousel slide" data-ride="carousel" data-interval="6000" data-pause="hover">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#valorant-intro" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#valorant-intro" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img id="skye" src="images/skye.png" alt="skye-image">
+            <img id="omen" src="images/Omen.png" alt="Omen-image">
+            <img id="jett" src="images/jett.png" alt="images/jett.png">
+            <img id="brim" src="images/Brimstone.png" alt="Brimstone-image">
+          </div>
+          <div class="carousel-item" style="padding: 59px 0%;">
+            <video controls loop autoplay muted width="600" height="300">
+              <source  src="Video.mp4">
+              <source  src="Video.WebM">
+            </video>
+          </div>
+      </div>
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#valorant-intro" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#valorant-intro" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button> -->
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+<div class="COD">
+      <img class="COD-IMAGE" src="images/game1.jpg" alt="">
+</div>  
+
+<!-- Features -->
+<section id="features">
+  <div class="row">
+    <div class="col-lg-4 featurebox">
+      <i class="fa-solid fa-layer-group fa-4x midimages"></i>
+      <h3>Arranged</h3>
+      <p>Access every feature of your game in one web, no need to shift or search tabs.</p>
+    </div>
+    <div class="col-lg-4 featurebox">
+      <i class="fa-solid fa-right-left fa-4x midimages" style="margin-top: 2px;" ></i>
+      <h3>User Friendly</h3>
+      <p>Get best market deals and Swap between two features of same game instantly.</p>
+    </div>
+    <div class="col-lg-4 featurebox">
+      <i class="fa-brands fa-phoenix-framework fa-4x midimages"></i>
+      <h3>Guaranteed to work.</h3>
+      <p>Instant load even with low profile internet.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+  
+<section id="testimonials">
+  <div id="testimonials-carousel" class="carousel slide" data-ride="carousel" data-interval="4000">
+    
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#testimonials-carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#testimonials-carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    </div>
+    
+    <div class="carousel-inner">
+      
+      <div class="carousel-item active">
+        <h2>I no longer have to sniff other dogs for love. I've found the hottest Corgi on TinDog. Woof.</h2>
+          <img class="dogimg" src="images/dog-img.jpg" alt="dog-profile">
+          <em>Pebbles, New York</em>
+      </div>
+      
+      <div class="carousel-item">
+        <h2 class="testimonial-text">My dog used to be so lonely, but with TinDog's help, they've found the love of their life. I think.</h2>
+          <img class="dogimg" src="images/lady-img.jpg" alt="lady-profile">
+          <em>Beverly, Illinois</em>
+      </div>
+      </div>
+      
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonials-carousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonials-carousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+  </div>
+</section>
+
+<!-- Press -->
+
+<section id="press">
+  <img class="press-images" src="images/techcrunch.png" alt="tc-logo">
+  <img class="press-images" src="images/tnw.png" alt="tnw-logo">
+  <img class="press-images" src="images/bizinsider.png" alt="biz-insider-logo">
+  <img class="press-images" src="images/mashable.png" alt="mashable-logo">
+</section>
+
+<!-- Pricing -->
+
+<section id="pricing">
+  <h2>A Plan for Every Dog's Needs</h2>
+  <p>Simple and affordable price plans for your and your dog.</p>
+<div class="row">
+  <div class="pricing-options col-lg-4 col-md-6">
+    <div class="card">
+      <div class="card-header">
+        <h3>Chihuahua</h3>
+      </div>
+      <div class="card-body">
+        <h2>Free</h2>
+        <p>5 Matches Per Day</p>
+        <p>10 Messages Per Day</p>
+        <p>Unlimited App Usage</p>
+
+        <button type="button" class="btn btn-block btn-outline-dark btn-lg" style="font-weight: bold;">Sign Up for free</button>
+      </div>  
+    </div>
+  </div>
+  <div class="pricing-options col-lg-4 col-md-6">
+    <div class="card">
+      <div class="card-header">
+        <h3>Labrador</h3>
+      </div>
+      <div class="card-body">
+        <h2>$49 / mo</h2>
+        <p>Unlimited Matches</p>
+        <p>Unlimited Messages</p>
+        <p>Unlimited App Usage</p>
+
+        <button type="button" class="btn btn-block btn-dark btn-lg">Sign Up</button>
+      </div>
+    </div>
+  </div>
+  <div class="pricing-options col-lg-4">
+    <div class="card">
+      <div class="card-header">
+        <h3>Mastiff</h3>
+      </div>
+      <div class="card-body">
+        <h2>$99 / mo</h2>
+        <p>Pirority Listing</p>
+        <p>Unlimited Matches</p>
+        <p>Unlimited Messages</p>
+        <p>Unlimited App Usage</p>
+ 
+        <button type="button" class="btn btn-block btn-dark btn-lg">Sign Up</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Call to Action -->
+
+  <section id="cta">
+
+    <h3 class="ctah3">Find the True Love of Your Dog's Life Today.</h3>
+    <button type="button" class="btn btn-dark btn-lg sizebtn" style="margin: 3% 2% 7%;"><i class="fa-brands fa-apple fa-lg"></i> Download</button>
+    <button type="button" class="btn btn-light btn-lg sizebtn" style="margin: 3% 0% 7%;"><i class="fa-brands fa-google-play"></i> Download</button>
+
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer id="footer">
+
+    <i class="fa-brands fa-facebook-f footer-spacing"></i><i class="fa-brands fa-instagram footer-spacing"></i><i class="fa-brands fa-twitter footer-spacing"></i><i class="fa-solid fa-envelope"></i>
+
+    <p style="margin-top: 3%;">© Copyright 2023 @SignatureSoft</p>
+
+  </footer>
+
+
+</body>
+
+</html>
